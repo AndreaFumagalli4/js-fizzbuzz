@@ -11,3 +11,10 @@
         1.2 SE un numero è multiplo di 5 ==> mostrare nella console 'Buzz';
         1.3 SE un numero è sia multiplo di 3 che di 5 ==> mostrare nella console 'FizzBuzz';
  */
+
+
+for (let i = 1; i <= 100; i++){
+    
+    console.log(i);
+    
+}
