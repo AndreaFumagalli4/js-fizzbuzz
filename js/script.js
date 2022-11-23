@@ -12,17 +12,28 @@
         1.3 SE un numero è sia multiplo di 3 che di 5 ==> mostrare nella console 'FizzBuzz';
  */
 
+const div = document.getElementById('box');
+const ul = document.createElement('ul');
+div.append(ul);
 
 for (let i = 1; i <= 100; i++){
-
+    
     if ((i % 3 === 0) && (i % 5 === 0)){
         console.log('FizzBuzz');
+        const element = `<li>${'FizzBuzz'}</li>`;
+        ul.innerHTML += element;
     } else if (i % 3 === 0){
         console.log('Fizz');
+        const element = `<li>${'Fizz'}</li>`;
+        ul.innerHTML += element;
     } else if (i % 5 === 0) {
         console.log('Buzz');
+        const element = `<li>${'Buzz'}</li>`;
+        ul.innerHTML += element;
     } else {
         console.log(i);
+        const element = `<li>${i}</li>`;
+        ul.innerHTML += element;
     }; 
-    
 };
+
