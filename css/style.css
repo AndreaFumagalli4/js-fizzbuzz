@@ -6,9 +6,41 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(217, 216, 216);
+}
+
 .container{
     width: 90%;
     margin: 0 auto;
     margin-top: 3rem;
 }
 
+.color-orange{
+    color: darkorange
+}
+
+.color-magenta{
+    color: magenta;
+}
+
+.color-green{
+    color: rgb(23, 207, 23);
+}
+
+.color-cyan{
+    color: cyan;
+}
+
+.color-red{
+    color: red;
+}
+
+.list-style{
+    list-style-type: none;
+}
+
+.padding{
+    padding: .25rem;
+}

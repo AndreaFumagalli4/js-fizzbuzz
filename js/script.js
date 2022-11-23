@@ -16,22 +16,29 @@ const div = document.getElementById('box');
 const ul = document.createElement('ul');
 div.append(ul);
 
+ul.className = "list-style";
+ul.classList.add("list-style");
+
+const title = document.querySelector('header h1');
+title.className = "color-red";
+title.classList.add("color-red");
+
 for (let i = 1; i <= 100; i++){
 
-    let element = `<li>${i}</li>`;
+    let element = `<li class="color-orange padding">${i}</li>`;
     
     if ((i % 3 === 0) && (i % 5 === 0)){
         console.log('FizzBuzz');
-        element = `<li>FizzBuzz</li>`;
+        element = `<li class="color-green padding">FizzBuzz</li>`;
     } else if (i % 3 === 0){
         console.log('Fizz');
-        element = `<li>Fizz</li>`;
+        element = `<li class="color-magenta padding">Fizz</li>`;
     } else if (i % 5 === 0) {
         console.log('Buzz');
-        element = `<li>Buzz</li>`;
+        element = `<li class="color-cyan padding">Buzz</li>`;
     } else {
         console.log(i);
     }; 
-    
+
     ul.innerHTML += element;
 };
